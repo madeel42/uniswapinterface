@@ -49,8 +49,8 @@ const BottomSection = styled(AutoColumn)`
 `
 
 const StyledDataCard = styled(DataCard)<{ bgColor?: any; showBackground?: any }>`
-// background: radial-gradient(76.02% 75.41% at 1.84% 0%, #1e1a31 0%, #3d51a5 100%);
-background: radial-gradient(76.02% 75.41% at 1.84% 0%,#F97341 0%,#5FB347 100%);
+  // background: radial-gradient(76.02% 75.41% at 1.84% 0%, #1e1a31 0%, #3d51a5 100%);
+  background: radial-gradient(76.02% 75.41% at 1.84% 0%, #f97341 0%, #5fb347 100%);
   z-index: 2;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
   background: ${({ theme, bgColor, showBackground }) =>

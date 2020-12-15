@@ -114,7 +114,10 @@ export default function Vote() {
 
   // user data
   const availableVotes: TokenAmount | undefined = useUserVotes()
-  const kwikBalance: TokenAmount | undefined = useTokenBalance(account ?? undefined, chainId ? KWIK[chainId] : undefined)
+  const kwikBalance: TokenAmount | undefined = useTokenBalance(
+    account ?? undefined,
+    chainId ? KWIK[chainId] : undefined
+  )
   const userDelegatee: string | undefined = useUserDelegatee()
 
   // show delegation option if they have have a balance, but have not delegated

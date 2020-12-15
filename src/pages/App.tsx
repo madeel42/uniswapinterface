@@ -17,7 +17,7 @@ import {
   RedirectOldAddLiquidityPathStructure,
   RedirectToAddLiquidity
 } from './AddLiquidity/redirects'
-import {VoteComingSoon} from './Vote/vote'
+import { VoteComingSoon } from './Vote/vote'
 import Earn from './Earn'
 import Manage from './Earn/Manage'
 import MigrateV from './MigrateV'
@@ -38,7 +38,7 @@ const AppWrapper = styled.div`
   flex-flow: column;
   align-items: flex-start;
   overflow-x: hidden;
-  background: radial-gradient(40% 60% at 52% 11%,#2d73ffc2 -184%,rgba(255,255,255,0) 100%);
+  background: radial-gradient(40% 60% at 52% 11%, #2d73ffc2 -184%, rgba(255, 255, 255, 0) 100%);
 `
 
 const HeaderWrapper = styled.div`
@@ -71,211 +71,210 @@ const Marginer = styled.div`
   margin-top: 5rem;
 `
 const LeftLine = styled.div`
-width: 624px;
-height: 1px;
-z-index: -1;
-background: linear-gradient(to right, #F97341 15%,#f6f6f6 100%);
-position: fixed;
-bottom: 187px;
-left: -118px;
-z-index: -1;
-box-shadow: 13px 0px 0px 0px #F97341;
-opacity: 0.3;
-transform: rotate(36.5deg);
-@media only screen and (max-width:1140px){
-  display: none;
-}
+  width: 624px;
+  height: 1px;
+  z-index: -1;
+  background: linear-gradient(to right, #f97341 15%, #f6f6f6 100%);
+  position: fixed;
+  bottom: 187px;
+  left: -118px;
+  z-index: -1;
+  box-shadow: 13px 0px 0px 0px #f97341;
+  opacity: 0.3;
+  transform: rotate(36.5deg);
+  @media only screen and (max-width: 1140px) {
+    display: none;
+  }
 `
 const LeftLine1 = styled.div`
-width: 754px;
-height: 1px;
-z-index: -1;
-background: linear-gradient(to right, #F97341 15%,#f6f6f6 100%);
-position: fixed;
-bottom: 196px;
-left: -80px;
-box-shadow: 13px 0px 0px 0px #F97341;
-opacity: 0.3;
-transform: rotate(37deg);
-@media only screen and (max-width:1140px){
-  display: none;
-}
+  width: 754px;
+  height: 1px;
+  z-index: -1;
+  background: linear-gradient(to right, #f97341 15%, #f6f6f6 100%);
+  position: fixed;
+  bottom: 196px;
+  left: -80px;
+  box-shadow: 13px 0px 0px 0px #f97341;
+  opacity: 0.3;
+  transform: rotate(37deg);
+  @media only screen and (max-width: 1140px) {
+    display: none;
+  }
 `
 const RightLine = styled.div`
-width: 602px;
-height: 1px;
-z-index: -1;
-/* background-color: #F97341; */
-background: linear-gradient(to right, #00FF14 0%,#707070 100%);
-position: fixed;
-top: 160px;
-right: -105px;
-box-shadow: 13px 0px 0px 0px #00FF14;
-opacity: 0.3;
-transform: rotate(35.5deg);
-@media only screen and (max-width:1140px){
-  display: none;
-}
+  width: 602px;
+  height: 1px;
+  z-index: -1;
+  /* background-color: #F97341; */
+  background: linear-gradient(to right, #00ff14 0%, #707070 100%);
+  position: fixed;
+  top: 160px;
+  right: -105px;
+  box-shadow: 13px 0px 0px 0px #00ff14;
+  opacity: 0.3;
+  transform: rotate(35.5deg);
+  @media only screen and (max-width: 1140px) {
+    display: none;
+  }
 `
 const RightLine1 = styled.div`
-width: 736px;
-height: 1px;
-z-index: -1;
-background: linear-gradient(to right,#00FF14 0%,#707070 100%);
-position: fixed;
-top: 158px;
-right: -61px;
-box-shadow: 13px 0px 0px 0px #00FF14;
-opacity: 0.3;
--webkit-transform: rotate(35.5deg);
--ms-transform: rotate(35.5deg);
-transform: rotate(35.5deg);
-@media only screen and (max-width:1140px){
-  display: none;
-}
+  width: 736px;
+  height: 1px;
+  z-index: -1;
+  background: linear-gradient(to right, #00ff14 0%, #707070 100%);
+  position: fixed;
+  top: 158px;
+  right: -61px;
+  box-shadow: 13px 0px 0px 0px #00ff14;
+  opacity: 0.3;
+  -webkit-transform: rotate(35.5deg);
+  -ms-transform: rotate(35.5deg);
+  transform: rotate(35.5deg);
+  @media only screen and (max-width: 1140px) {
+    display: none;
+  }
 `
 const YellowStar = styled.div`
-width: 13px;
-    height: 13px;
-    z-index: -1;
-    position: relative;
-    left: -516px;
-    bottom: -1px;
-    /* left: 23px; */
-    /* margin-left: -409px; */
-    /* margin-top: 13px; */
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
-    background-color: #D4F421;
-    box-shadow: 0px 0px 27px 3px #D4F421;
-    @media only screen and (max-width:1140px){
-      display: none;
-    }
+  width: 13px;
+  height: 13px;
+  z-index: -1;
+  position: relative;
+  left: -516px;
+  bottom: -1px;
+  /* left: 23px; */
+  /* margin-left: -409px; */
+  /* margin-top: 13px; */
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  background-color: #d4f421;
+  box-shadow: 0px 0px 27px 3px #d4f421;
+  @media only screen and (max-width: 1140px) {
+    display: none;
+  }
 `
 const CGreen = styled.div`
-width: 11px;
-    height: 11px;
-    position: relative;
-    left: -296px;
-    bottom: -81px;
-    z-index: -1;
-    border-radius: 50px;
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
-    background-color: #13E4F5;
-    box-shadow: 0px 0px 24px 3px #13E4F5;
-@media only screen and (max-width:1140px){
-  display: none;
-}
+  width: 11px;
+  height: 11px;
+  position: relative;
+  left: -296px;
+  bottom: -81px;
+  z-index: -1;
+  border-radius: 50px;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  background-color: #13e4f5;
+  box-shadow: 0px 0px 24px 3px #13e4f5;
+  @media only screen and (max-width: 1140px) {
+    display: none;
+  }
 `
 const BrownStar = styled.div`
-width: 8px;
-    height: 8px;
-    position: relative;
-    z-index: -1;
-    left: -310px;
-    bottom: -310px;
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    -webkit-transform: rotate(48deg);
-    -ms-transform: rotate(48deg);
-    transform: rotate(48deg);
-    background-color: #F97341;
-    box-shadow: 0px 0px 18px 3px #F97341;
-@media only screen and (max-width:1140px){
-  display: none;
-}
-
+  width: 8px;
+  height: 8px;
+  position: relative;
+  z-index: -1;
+  left: -310px;
+  bottom: -310px;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(48deg);
+  -ms-transform: rotate(48deg);
+  transform: rotate(48deg);
+  background-color: #f97341;
+  box-shadow: 0px 0px 18px 3px #f97341;
+  @media only screen and (max-width: 1140px) {
+    display: none;
+  }
 `
 const HexaGon = styled.div`
-width: 6px;
-    height: 6px;
-    z-index: -1;
-    position: relative;
-    top: 473px;
-    right: 181px;
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
-    background-color: #D4F421;
-    box-shadow: 0px 0px 30px 3px #D4F421;
-@media only screen and (max-width:1140px){
-  display: none;
-}
+  width: 6px;
+  height: 6px;
+  z-index: -1;
+  position: relative;
+  top: 473px;
+  right: 181px;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  background-color: #d4f421;
+  box-shadow: 0px 0px 30px 3px #d4f421;
+  @media only screen and (max-width: 1140px) {
+    display: none;
+  }
 `
 const BlueCircle = styled.div`
-width: 9px;
-height: 9px;
-z-index: -1;
-position: relative;
-top: 486px;
-left: 115px;
-border-radius: 50px;
--webkit-transform: rotate(45deg);
--ms-transform: rotate(45deg);
--webkit-transform: rotate(45deg);
--ms-transform: rotate(45deg);
-transform: rotate(45deg);
-background-color: #0F48E3;
-box-shadow: 0px 0px 29px 5px #0F48E3;
-    @media only screen and (max-width:1140px){
-      display: none;
-    }
- `
+  width: 9px;
+  height: 9px;
+  z-index: -1;
+  position: relative;
+  top: 486px;
+  left: 115px;
+  border-radius: 50px;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  background-color: #0f48e3;
+  box-shadow: 0px 0px 29px 5px #0f48e3;
+  @media only screen and (max-width: 1140px) {
+    display: none;
+  }
+`
 const CGreenSimpleDiv = styled.div`
-width: 6px;
-height: 6px;
-position: relative;
-top: 418px;
-left: 330px;
-z-index: -1;
-background-color: #13E4F5;
-box-shadow: 0px 0px 36px 4px #13E4F5;
-    @media only screen and (max-width:1140px){
-      display: none;
-    }
+  width: 6px;
+  height: 6px;
+  position: relative;
+  top: 418px;
+  left: 330px;
+  z-index: -1;
+  background-color: #13e4f5;
+  box-shadow: 0px 0px 36px 4px #13e4f5;
+  @media only screen and (max-width: 1140px) {
+    display: none;
+  }
 `
 const DarkGreenStar = styled.div`
-width: 10px;
-    height: 10px;
-    z-index: -1;
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    position: absolute;
-    right: 104px;
-    bottom: 308px;
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
-    background-color: #0CBE2E;
-    box-shadow: 0px 0px 27px 3px #0CBE2E;
-@media only screen and (max-width:1140px){
-  display: none;
-}
+  width: 10px;
+  height: 10px;
+  z-index: -1;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  position: absolute;
+  right: 104px;
+  bottom: 308px;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  background-color: #0cbe2e;
+  box-shadow: 0px 0px 27px 3px #0cbe2e;
+  @media only screen and (max-width: 1140px) {
+    display: none;
+  }
 `
 const BlueStar = styled.div`
-width: 12px;
-height: 12px;
-z-index: -1;
--webkit-transform: rotate(45deg);
--ms-transform: rotate(45deg);
-position: relative;
-left: 319px;
-bottom: 83px;
--webkit-transform: rotate(45deg);
--ms-transform: rotate(45deg);
-transform: rotate(45deg);
-background-color: #1C90F4;
-box-shadow: 0px 0px 27px 3px #1C90F4;
-@media only screen and (max-width:1140px){
-  display: none;
-}
+  width: 12px;
+  height: 12px;
+  z-index: -1;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  position: relative;
+  left: 319px;
+  bottom: 83px;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  background-color: #1c90f4;
+  box-shadow: 0px 0px 27px 3px #1c90f4;
+  @media only screen and (max-width: 1140px) {
+    display: none;
+  }
 `
 
 function TopLevelModals() {

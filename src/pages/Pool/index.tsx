@@ -27,7 +27,7 @@ const PageWrapper = styled(AutoColumn)`
 
 const VoteCard = styled(DataCard)`
   // background: radial-gradient(76.02% 75.41% at 1.84% 0%, #27ae60 0%, #000000 100%);
-  background: radial-gradient(76.02% 75.41% at 1.84% 0%,#F97341 0%,#5FB347 100%);
+  background: radial-gradient(76.02% 75.41% at 1.84% 0%, #f97341 0%, #5fb347 100%);
   overflow: hidden;
 `
 
@@ -40,32 +40,31 @@ const TitleRow = styled(RowBetween)`
   `};
 `
 const ButtonRow = styled.div`
-box-sizing: border-box;
-margin: 0;
-min-width: 0;
-//  width: 100%; 
-// width: 05;
-// background: aliceblue;
-display: -webkit-box;
-display: -webkit-flex;
-display: -ms-flexbox;
-display: flex;
-padding: 0;
--webkit-align-items: center;
--webkit-box-align: center;
--ms-flex-align: center;
-align-items: center;
--webkit-box-pack: justify;
--webkit-justify-content: space-between;
--ms-flex-pack: justify;
-justify-content: space-between;
-gap: 8px;
-${({ theme }) => theme.mediaWidth.upToSmall`
+  box-sizing: border-box;
+  margin: 0;
+  min-width: 0;
+  //  width: 100%;
+  // width: 05;
+  // background: aliceblue;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  gap: 8px;
+  ${({ theme }) => theme.mediaWidth.upToSmall`
      width: 100%;
      flex-direction: row-reverse;
      justify-content: space-between;
    `};
-
 `
 // const ButtonRow = styled(RowFixed)`
 //   gap: 8px;
@@ -84,7 +83,7 @@ const ResponsiveButtonPrimary = styled(ButtonPrimary)`
 `
 
 const ResponsiveButtonSecondary = styled(ButtonSecondary)`
-// margin-left:219px;
+  // margin-left:219px;
   width: fit-content;
   ${({ theme }) => theme.mediaWidth.upToSmall`
     width: 48%;
@@ -176,7 +175,7 @@ export default function Pool() {
                 </TYPE.mediumHeader>
               </HideSmall>
               <ButtonRow>
-                <ResponsiveButtonSecondary as={Link} padding="6px 8px"  to="/create/ETH">
+                <ResponsiveButtonSecondary as={Link} padding="6px 8px" to="/create/ETH">
                   Create a pair
                 </ResponsiveButtonSecondary>
                 <ResponsiveButtonPrimary id="join-pool-button" as={Link} padding="6px 8px" to="/add/ETH">
@@ -215,12 +214,12 @@ export default function Pool() {
                 ))}
               </>
             ) : (
-                    <EmptyProposals>
-                      <TYPE.body color={theme.text3} textAlign="center">
-                        No liquidity found.
+              <EmptyProposals>
+                <TYPE.body color={theme.text3} textAlign="center">
+                  No liquidity found.
                 </TYPE.body>
-                    </EmptyProposals>
-                  )}
+              </EmptyProposals>
+            )}
 
             <AutoColumn justify={'center'} gap="md">
               <Text textAlign="center" fontSize={14} style={{ padding: '.5rem 0 .5rem 0' }}>

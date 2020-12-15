@@ -167,11 +167,7 @@ export default function RemoveVExchange({
         {!account ? (
           <TYPE.largeHeader>You must connect an account.</TYPE.largeHeader>
         ) : userLiquidityBalance && token && exchangeContract ? (
-          <VPairRemoval
-            exchangeContract={exchangeContract}
-            liquidityTokenAmount={userLiquidityBalance}
-            token={token}
-          />
+          <VPairRemoval exchangeContract={exchangeContract} liquidityTokenAmount={userLiquidityBalance} token={token} />
         ) : (
           <EmptyState message="Loading..." />
         )}

@@ -143,7 +143,10 @@ export default function VotePage({
     proposalData &&
     proposalData.status === 'active'
 
-  const kwikBalance: TokenAmount | undefined = useTokenBalance(account ?? undefined, chainId ? KWIK[chainId] : undefined)
+  const kwikBalance: TokenAmount | undefined = useTokenBalance(
+    account ?? undefined,
+    chainId ? KWIK[chainId] : undefined
+  )
   const userDelegatee: string | undefined = useUserDelegatee()
 
   // in blurb link to home page if they are able to unlock

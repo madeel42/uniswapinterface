@@ -27,7 +27,7 @@ const ContentWrapper = styled(AutoColumn)`
 const ModalUpper = styled(DataCard)`
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
   // background: radial-gradient(76.02% 75.41% at 1.84% 0%, #ff007a 0%, #021d43 100%);
-  background: radial-gradient(76.02% 75.41% at 1.84% 0%,#F97341 0%,#5FB347 100%);
+  background: radial-gradient(76.02% 75.41% at 1.84% 0%, #f97341 0%, #5fb347 100%);
 `
 
 const ConfirmOrLoadingWrapper = styled.div<{ activeBG: boolean }>`
@@ -137,7 +137,8 @@ export default function ClaimModal() {
           </ModalUpper>
           <AutoColumn gap="md" style={{ padding: '1rem', paddingTop: '0' }} justify="center">
             <TYPE.subHeader fontWeight={500}>
-              As a member of the Kwikswap community you may claim KWIK to be used for voting and governance. <br /> <br />
+              As a member of the Kwikswap community you may claim KWIK to be used for voting and governance. <br />{' '}
+              <br />
               <ExternalLink href="https://kwikswap.org/blog/kwik">Read more about KWIK</ExternalLink>
             </TYPE.subHeader>
             <ButtonPrimary

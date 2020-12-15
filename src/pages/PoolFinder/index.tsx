@@ -20,26 +20,26 @@ import AppBody from '../AppBody'
 import { Dots } from '../Pool/styleds'
 import styled from 'styled-components'
 const AppBodyContainer = styled.div`
-display: flex;
-justify-content: space-between;
-
+  display: flex;
+  justify-content: space-between;
 `
 const BelowAppbody = styled.div`
-margin: 15px 44px;
-border-radius: 40px 116px 0 0;
-box-sizing: border-box;
-background-color: cyan;
-box-shadow:  ${({ theme }) => `-34px -16px 176px 80px ${theme.cardsBoxShadowTopLeftcorner}, -9px 33px 56px 13px ${theme.cardsBoxShadowTopleftCorner1}`};
-// box-shadow: -6px 23px 150px 73px rgb(249,115,65,0.5), -9px 33px 56px 21px rgb(249 115 65 / 0%);
-
+  margin: 15px 44px;
+  border-radius: 40px 116px 0 0;
+  box-sizing: border-box;
+  background-color: cyan;
+  box-shadow: ${({ theme }) =>
+    `-34px -16px 176px 80px ${theme.cardsBoxShadowTopLeftcorner}, -9px 33px 56px 13px ${theme.cardsBoxShadowTopleftCorner1}`};
+  // box-shadow: -6px 23px 150px 73px rgb(249,115,65,0.5), -9px 33px 56px 21px rgb(249 115 65 / 0%);
 `
 const BelowAppbody1 = styled.div`
-margin: -28px -34px;
-border-radius: 40px 116px 0 0;
-box-sizing: border-box;
-background-color: cyan;
-box-shadow:  ${({ theme }) => `10px -3px 136px 41px ${theme.cardsBoxShadowTopRightcorner}, -15px 28px 140px 11px ${theme.cardsBoxShadowTopRightCorner1}`} 
-// box-shadow: 10px -3px 136px 41px rgb(95,179,71), -15px 28px 140px 11px rgb(95,179,71);
+  margin: -28px -34px;
+  border-radius: 40px 116px 0 0;
+  box-sizing: border-box;
+  background-color: cyan;
+  box-shadow: ${({ theme }) =>
+    `10px -3px 136px 41px ${theme.cardsBoxShadowTopRightcorner}, -15px 28px 140px 11px ${theme.cardsBoxShadowTopRightCorner1}`};
+  // box-shadow: 10px -3px 136px 41px rgb(95,179,71), -15px 28px 140px 11px rgb(95,179,71);
 `
 
 enum Fields {
@@ -102,9 +102,9 @@ export default function PoolFinder() {
   return (
     <AppBody>
       <AppBodyContainer>
-          <BelowAppbody></BelowAppbody>
-          <BelowAppbody1></BelowAppbody1>
-        </AppBodyContainer>
+        <BelowAppbody></BelowAppbody>
+        <BelowAppbody1></BelowAppbody1>
+      </AppBodyContainer>
       <FindPoolTabs />
       <AutoColumn gap="md">
         <ButtonDropdownLight

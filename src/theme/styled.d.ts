@@ -9,10 +9,10 @@ export interface Colors {
   // text
   BUYTEXT: Color
   EnterAmountconectwallet: Color
-  BorderColor:Color
-  KWIKBACKGROUND:Color
+  BorderColor: Color
+  KWIKBACKGROUND: Color
   RDial: Color
-  Rdial1:Color
+  Rdial1: Color
   text1: Color
   text2: Color
   text3: Color
@@ -44,7 +44,7 @@ export interface Colors {
   primary3: Color
   primary4: Color
   primary5: Color
-  
+
   primary7: Color
   primary8: Color
 
@@ -90,7 +90,6 @@ declare module 'styled-components' {
     flexRowNoWrap: FlattenSimpleInterpolation
   }
 }
-
 
 // import { FlattenSimpleInterpolation, ThemedCssFunction } from 'styled-components'
 
